@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles css-->
+    <link rel="stylesheet" href="../sing-up/css/signup.css">
+    <link rel="stylesheet" href="../sing-up/css/signup2.css">
+    <link rel="stylesheet" href="css/myPage.css">
+    <!-- swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>innuneco-myPage(정회원)).html</title>
+
+</head>
+
+<body>
+    <div id="myPage" class="xans-element- xans-member xans-member-edit slide-in">
+        <div class="container">
+            <div class="PageTopWrap" style="margin-top: 90px;">
+                <h1 class="pageTitle mb-4">MY PAGE</h1>
+            </div>
+            <div class="pageNav text-center">
+                <button type="button" class="btn btn-primary active col-sm-2">홈</button>
+                <button type="button" class="btn btn-secondary col-sm-2" onclick="gomyOrder()">주문내역</button>
+                <button type="button" class="btn btn-secondary col-sm-2">쿠폰</button>
+                <button type="button" class="btn btn-secondary col-sm-2">적립금</button>
+                <button type="button" class="btn btn-secondary col-sm-2">회원정보</button>
+            </div>
+        </div>
+        <div class="container mobile" style="margin-bottom: 30px;">
+            <div class="myshop_wrap widthHolder pd0">
+
+                <!-- main(1) -->
+                <div class="myshop_home_top mowidth100" style="border: 1px solid #e0e0e0;">
+                    <div class="myshop_home_top_btns clearfix">
+                        <a class="btnLine" href="#">다른 아이 등록하기</a>
+                        <a class="btnLine" href="../myPage/myPage2.html">보리로 활동하기</a>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="myshop_home_top_info textcenter" style="opacity: 1;">
+
+                        <a href="#" class="xans-element- xans-myshop xans-myshop-asyncbenefit myshop_home_group_btns"
+                            style="margin-top: 5px;">
+                            <font class="myshop_home_group_btns ">
+                                <span class="xans-member-var-group_name">정회원</span>
+
+                            </font>
+                        </a>
+
+                        <a class="pet_img3" id="pet_img" href="#"></a>
+                        <h1 class="hgg yesInformation" style="display: block;">
+                            <font id="memberName"
+                                class="xans-element- xans-myshop xans-myshop-asyncbenefit memberName ">박원지님,</font>
+                            <b class="petName">행운</b>(이)와<br>함께한 지 <b class="petPeriod">1440</b>일째입니다.
+                        </h1>
+                        <h1 class="hgg noInformation" id="noInformation" style="display: none;">
+                            <b>우리 아이 </b>
+                            <font class="xans-element- xans-myshop xans-myshop-asyncbenefit ">등록하기
+                            </font>
+                        </h1>
+
+                        <div class="clear"></div>
+
+                        <div class="yesInformation" style="display: block;">
+                            <font class="petBirth">2019년 03월 03일</font> 생
+                        </div>
+                        <div class="pet-info-detail" style="display: flex;">
+                            <div class="pet-name-and-gender">
+                                <span class="pet-name">보리</span><span class="pet-gender">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        id="svg_icon_v1_icon-pet-man-darkgreen">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#006064" fill-rule="nonzero"
+                                                d="M11.588.184c-.018-.018-.04-.033-.06-.047l-.033-.022c-.043-.025-.09-.05-.14-.068-.026-.007-.051-.018-.076-.022-.065-.018-.13-.025-.202-.025H6.912c-.443 0-.835.353-.835.796v.003c0 .443.385.814.828.814l2.25.01L6.98 3.803 8.096 4.91l2.178-2.178v2.232c0 .443.36.803.803.803.443 0 .803-.36.803-.803V.796c0-.245-.115-.465-.292-.612z">
+                                            </path>
+                                            <circle cx="4.5" cy="7.466" r="3.72" stroke="#006064" stroke-width="1.56">
+                                            </circle>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="bar"></div>
+                            <div class="pet-breed"><span>비숑 프리제</span></div>
+                            <div class="bar"></div>
+                            <div class="pet-age-and-weight">
+                                <span>4년</span>
+                            </div>
+                            <div class="bar"></div>
+                            <div class="pet-age-and-weight">
+                                <span>7kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main(2) -->
+
+                <div class="myshop_home_top subMain-bottom"
+                    style="background-color: #fff; padding: 10px 20px 10px 20px;">
+                    <div class="clear"></div>
+                    <div class="myshop_home_top_info textcenter" style="opacity: 1;">
+                        <div class="bottom per_100">
+                            <div class="health-allergy-container half per_50">
+                                <div class="health-allergy-badge-container" style="margin-top: 20px">
+                                    <div class="health selection1">
+                                        <span class="main">모질</span>
+                                    </div>
+                                    <div class="health selection1">
+                                        <span class="main">치아</span>
+                                    </div>
+                                </div>
+                                <div class="health-allergy-badge-container">
+                                    <div class="health selection1">
+                                        <span class="main">피부</span>
+                                    </div>
+                                    <div class="health selection1">
+                                        <span class="main">호흡기</span>
+                                    </div>
+       
+                                </div>
+                                <p class="care">에 신경을 쓰고 있어요</p>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="health-allergy-container half per_50">
+                                <div class="modify-button">
+                                    <div class="clickable">
+                                        <div class="pet-info-edit-icon-container"> 수정
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="health-allergy-badge-container" style="margin-top: 38px;">
+                                    <div class="health selection2">
+                                        <span class="main">연어</span>
+                                    </div>
+                                    <div class="health selection2">
+                                        <span class="main">소고기</span>
+                                    </div>
+                                    <div class="health selection2">
+                                        <span class="main">펫밀크</span>
+                                    </div>
+                                </div>
+                                <span class="care">을(를) 조심해야 해요</span>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <!-- 하단 박스 -->
+                <div class="myshop_home_bottom clearfix border-left">
+                    <div class="per_50 borderright mowidth100 monoborder ">
+                        <div class="xans-element- xans-myshop xans-myshop-asyncbankbook clearfix ">
+                            <div class="per_50 mowidth100 pd10 borderright borderbottom clearfix">
+                                <a href="#" class="xans_myshop_bankbook_coupon_cnt mainTitle">
+                                    사용가능한쿠폰
+                                    <h2 class="hgg floatright"><span id="myshop_coupon_cnt">1</span>장</h2>
+                                </a>
+                            </div>
+                            <div class="per_50 mowidth100 pd10 borderbottom clearfix">
+                                <a href="#" class="mainTitle">
+                                    적립금 <h2 class="hgg floatright"><span id="myshop_coupon_cnt">0</span>원</h2>
+                                    </h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="per_100 pd10 moborderbottom">
+                            <h3>주문배송조회<span class="curretly">최근 3개월기준</span><a href="#"
+                                    class="floatright myshopArrowBtn"></a>
+                            </h3>
+                            <div class="clear"></div>
+                            <div class="xans-element- xans-myshop xans-myshop-orderstate ">
+                                <ul class="order linone" style="margin-left: -19px;">
+                                    <li>
+                                        <a href="#" class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_before_count">0</span></a>
+                                        <strong>입금전</strong>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_standby_count">0</span></a>
+                                        <strong>배송준비중</strong>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_begin_count">1</span></a>
+                                        <strong>배송중</strong>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hgg count"><span
+                                                id="xans_myshop_orderstate_shppied_complate_count">0</span></a>
+                                        <strong>배송완료</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="per_50 pd10 mowidth100 borderright">
+                        <h3 style="padding: 5px 0 0 2px;">고객센터</h3>
+                        <br><br>
+                        <h2 class="hgg textcenter">1577-1577</h2>
+                        <p class="textcenter">
+                            <font class="green bold">AM 09:30 ~ PM 18:10</font><br>Lunch PM 13:10 ~ 12:20
+                            <br>Sat, Sun, Holiday OFF
+                        </p>
+                        <br><br>
+                    </div>
+                    <div class="clear borderbottom" style="margin-top:-1px;"></div>
+                    <div class="per_50 pd10 borderright mowidth100 monoborder moborderbottom">
+                        <h3>취소/ 교환/ 반품내역<a href="#" class="floatright myshopArrowBtn"></a>
+                        </h3>
+                        <div class="clear"></div>
+                        <div class="xans-element- xans-myshop xans-myshop-orderstate ">
+                            <ul class="cs clearfix linone">
+                                <li>
+                                    <strong>취소</strong>
+                                    <a href="#" class="hgg count"><span
+                                            id="xans_myshop_orderstate_order_cancel_count">0</span></a>
+                                </li>
+                                <li>
+                                    <strong>교환</strong>
+                                    <a href="#" class="hgg count"><span
+                                            id="xans_myshop_orderstate_order_exchange_count">0</span></a>
+                                </li>
+                                <li>
+                                    <strong>반품</strong>
+                                    <a href="#" class="hgg count"><span
+                                            id="xans_myshop_orderstate_order_return_count">0</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="per_50 mowidth100 monoborder border-right border-bottom">
+                        <h3 class="pd10 border-bottom per_100">
+                            공지사항<a href="#" class="floatright myshopArrowBtn"></a>
+                        </h3>
+                        <h3 class="pd10 bordertop per_100">
+                            자주 묻는 질문<a href="#" class="floatright myshopArrowBtn"></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="../sing-up/js/swiper.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- custom js -->
+        <script src="js/myPage.js"></script>
+</body>
+
+</html>

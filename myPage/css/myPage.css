@@ -1,0 +1,748 @@
+#myPage {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.8em;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  font-weight: inherit;
+}
+
+.mainTitle {
+  position: relative;
+  top: 5px;
+}
+
+@media (min-width: 576px) {
+  .mobile {
+    max-width: 979px;
+    transition: 0.2s;
+  }
+}
+
+.myshop_wrap {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 40px 15px 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.pageTopWrap {
+  margin-bottom: -180px;
+  padding-bottom: 200px;
+  position: relative;
+  width: 100%;
+  padding: 0 0 0;
+  margin: 0 0;
+}
+
+.pageTitle {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #8d95d6;
+  margin: 0 0 30px;
+  padding: 0 10px;
+  line-height: 1.2em;
+}
+
+#myPage .menu {
+  display: flex;
+  flex-direction: row;
+}
+
+#myPage .btn {
+  width: 13%;
+  border-radius: 70px;
+  margin-right: 8px;
+}
+
+@media (max-width: 660px) {
+  #myPage .btn {
+    width: 61px;
+    font-size: 10px;
+    border-radius: 70px;
+    margin-right: 1px;
+    margin-bottom: -17px;
+    transition: 0.2s;
+  }
+}
+
+/* 더입력하기 란 */
+.noInformation a {
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-block;
+  color: #4a4c63;
+  font-family: "HGGGothicssi", "Helvetica", "Arial", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", sans-serif;
+  margin: 10px 0 0;
+}
+
+.linone {
+  list-style-type: none;
+}
+
+.myshop_wrap.pd0 {
+  padding: 0;
+}
+
+.myshop_wrap {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 40px 15px 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.widthHolder {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 51px;
+}
+
+.myshop_home_top {
+  position: relative;
+  min-height: 100px;
+  background: #f3f6fb;
+  padding: 20px;
+}
+
+.myshop_home_top_btns {
+  margin-bottom: 20px;
+}
+
+.myshop_home_group_btns {
+  font-family: "fot-tsukuardgothic-std", "Helvetica", "Arial", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  background: #80afe5;
+  color: #fff;
+  height: 30px;
+  padding: 1px 0 0 0;
+  width: 134px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.clearfix {
+  display: block;
+}
+
+.myshop_home_top_btns a {
+  float: right;
+  display: block;
+  margin: 0 0 0 10px;
+  font-size: 12px;
+}
+
+.btnLine {
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-block;
+  color: #8d95d6;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.myshop_home_top_info {
+  font-size: 12px;
+}
+.textcenter {
+  text-align: center;
+}
+
+.myshop_home_top_info .pet_img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/mypage-proflie.png);
+  margin: 0 auto 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* mypage2 */
+.myshop_home_top_info .pet_img2 {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/info-img3.png);
+  margin: 10px auto 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* mypage3 */
+.myshop_home_top_info .pet_img3 {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/info-img5.png);
+  margin: 10px auto 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* main2 */
+.bottom {
+  display: flex;
+}
+
+.bottom .health-allergy-container .health-allergy-badge-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+
+.bottom .health-allergy-container .health-allergy-badge-container .selection1 {
+  border-radius: 5px;
+  background-color: #80afe5;
+  min-width: 54px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  margin-bottom: 4px;
+  width: 30px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+}
+
+.bottom .health-allergy-container .health-allergy-badge-container .selection2 {
+  border-radius: 5px;
+  background-color: #8d95d6;
+  min-width: 54px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  margin-bottom: 4px;
+  width: 30px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+}
+
+.bottom .health-allergy-container .health-allergy-badge-container .selection .main {
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+}
+
+.bottom .separator {
+  width: 1px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+}
+
+/* mypage2 */
+
+.noInformation {
+  line-height: 1.6em;
+}
+
+/* bottom */
+
+.curretly {
+  margin-left: 7px;
+  letter-spacing: -0.5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.myshop_home_bottom {
+  border-top: 1px solid #dfe9e8;
+  line-height: 1.8em;
+}
+
+.myshop_home_bottom .borderright {
+  border-right: 1px solid #dfe9e8;
+}
+
+.border-left {
+  border-left: 1px solid #dfe9e8;
+}
+
+.border-right {
+  border-right: 1px solid #dfe9e8;
+}
+
+.per_50 {
+  width: 50%;
+  float: left;
+}
+
+.borderbottom {
+  border-bottom: 1px solid #dfe9e8;
+}
+
+.myshop_home_bottom .borderbottom {
+  border-bottom: 1px solid #dfe9e8;
+}
+
+.pd10 {
+  padding: 10px;
+}
+
+.myshop_home_bottom h2 {
+  font-size: 25px;
+  color: #80afe5;
+  font-weight: 500;
+}
+
+.floatright {
+  float: right;
+}
+
+#myshop_coupon_cnt {
+  font-size: 25px;
+  color: #80afe5;
+  font-weight: 500;
+}
+
+.myshop_home_bottom a {
+  color: #4c4c4c;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.per_100 {
+  width: 100%;
+  float: left;
+}
+
+.myshop_home_bottom h3 {
+  font-size: 13px;
+  color: #8d95d6;
+  font-weight: bold;
+}
+
+.xans-member-edit h3 {
+  margin: 0 0 10px;
+}
+
+.myshop_home_bottom span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #4c4c4c;
+}
+
+.myshop_home_bottom .myshopArrowBtn {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(/images/ico_arrow_right_cline.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px auto;
+}
+
+/* 주문배송조회 */
+
+.xans-myshop-orderstate {
+  margin: 0 auto 0;
+  border: 0;
+  width: 100%;
+}
+
+.xans-myshop-orderstate .order {
+  float: left;
+  width: 100%;
+}
+
+.xans-myshop-orderstate .order li {
+  position: relative;
+  float: left;
+  width: 25%;
+  padding: 0;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.xans-myshop-orderstate .order .count {
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.xans-myshop-orderstate .order .count span {
+  position: relative;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  background: #8d95d6;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+}
+
+.xans-myshop-orderstate .order li strong {
+  display: block;
+  margin: 5px 0;
+  font-size: 11px;
+  color: #4c4c4c;
+}
+
+.xans-myshop-orderstate .order li::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: transparent;
+  background-image: url(/images/ico_direction_right.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px auto;
+}
+
+.myshop_home_bottom p {
+  font-size: 12px;
+  font-weight: normal;
+  color: #4c4c4c;
+  line-height: 1.6em;
+  margin: 15px 0 0;
+}
+
+/* 취소 반품 내역 */
+
+.xans-myshop-orderstate .cs {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.xans-myshop-orderstate .cs li {
+  float: left;
+  width: 33.33333%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.xans-myshop-orderstate .cs strong {
+  font-weight: normal;
+  font-size: 12px;
+  color: #4c4c4c;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.xans-myshop-orderstate .cs .count {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.xans-myshop-orderstate .cs .count span {
+  font-weight: 500;
+  font-size: 24px;
+  color: #80afe5;
+  margin: 0 10px;
+}
+
+#container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width: 900px) {
+  .moborderbottom {
+    border-bottom: 1px solid #dfe9e8 !important;
+    transition: 0.2s;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mowidth100 {
+    width: 100% !important;
+    transition: 0.2s;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .myshop_wrap {
+    padding: 20px 10px 0;
+    box-shadow: none;
+    transition: 0.2s;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .moborderbottom {
+    border-bottom: 1px solid #dfe9e8 !important;
+    transition: 0.2s;
+  }
+}
+
+/* info 정보 있을 때 */
+
+.myshop_home_top_info h1 {
+  font-size: 30px;
+  line-height: 1.4em;
+  color: #4a4c63;
+  margin-bottom: 10px;
+}
+
+.myshop_home_top_info b {
+  position: relative;
+  color: #4a4c63;
+  z-index: 1;
+}
+
+b,
+.bold {
+  font-weight: 600;
+}
+
+.myshop_home_top_info b::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #dfe9e8;
+  z-index: -1;
+}
+
+/* main 두번째 칸 */
+
+.modify-button {
+  font-weight: 400;
+  color: #888;
+  font-size: 11px;
+  text-align: right;
+}
+
+.top__left {
+  padding: 8px 18px 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+}
+
+.pet-info-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.pet-name-and-gender {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.pet-name {
+  font-weight: 700;
+  color: #222;
+  font-size: 15px;
+}
+
+.pet-gender {
+  margin-left: 4px;
+  top: -1px;
+  position: relative;
+}
+
+.pet-breed {
+  font-weight: 400;
+  color: #555;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.pet-age-and-weight {
+  font-weight: 400;
+  color: #999;
+  font-size: 13px;
+  display: flex;
+}
+
+.bar {
+  width: 1px;
+  background: #bebebe;
+  height: 13px;
+  margin: 8px 8px;
+}
+
+/* 두번째 정보 left */
+
+.myshop_home_top_btns-left {
+  float: right;
+  display: block;
+  font-size: 12px;
+}
+
+.btnLine2 {
+  margin: 5px 0 3px 0;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  color: #222;
+}
+
+.my-pet-contents-pet-add-button {
+  position: relative;
+  right: -52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #f1f1f1;
+}
+
+.my-pet-contents-pet-add-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.difdog {
+  width: 175px;
+  height: 94px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #222;
+  font-size: 12px;
+  padding: 0 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.subMain-bottom {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.clickable {
+  float: right;
+  position: relative;
+  top: -5px;
+}
+
+.care {
+  font-weight: 600;
+  color: #222;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .bottom .health-allergy-container .health-allergy-badge-container .selection1 {
+    border-radius: 5px;
+    background-color: #80afe5;
+    min-width: 40px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    width: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    transition: 2s;
+  }
+
+  .selection2 {
+    border-radius: 5px;
+    background-color: #8d95d6;
+    min-width: 54px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    width: 25%;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    transition: 2s;
+  }
+
+  .main {
+    font-weight: 700;
+    color: #fff;
+    font-size: 11px;
+    transition: 2s;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .myshop_home_top_info h1 {
+    font-size: 27px;
+  }
+}
+
+
+.slide-in {
+  animation: change 0.5s ease forwards;
+}
+
+@keyframes change {
+  from {
+      transform: translateX(100%);
+      visibility: visible;
+  }
+
+  to {
+      transform: translateX(0%);
+  }
+}

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles css-->
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/signup2.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <!-- font awesome -->
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>innuneco-sign-up.html</title>
+
+</head>
+
+<body>
+
+    <!-- <header id="header"></header> -->
+
+    <div id="sign-up">
+        <div class="container" style="width: 900px;">
+
+
+            <!-- Start Question progress -->
+            <div class="qna-top">
+                <div class="py-5 text-center personl-p-12">
+                    <h1 class="d-block mx-auto fs-6 mb-2 fw-lighter p-2 light-gray">QUESTION <span
+                            id="question-level">1</span>/3</h1>
+                    <!-- Question progress -->
+                    <div class="position-relative m-4">
+                        <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                            <div id="qna-progress-bar" class="progress-bar qna-level-0"></div>
+                        </div>
+                        <button type="button"
+                            class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill swiperBtn0"
+                            style="width: 2rem; height:2rem;">1</button>
+                        <button type="button"
+                            class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill swiperBtn1"
+                            style="width: 2rem; height:2rem;">2</button>
+                        <button type="button"
+                            class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill swiperBtn2"
+                            style="width: 2rem; height:2rem;">3</button>
+                    </div>
+                    <!-- Question progress -->
+                </div>
+            </div>
+            <!-- End question progress -->
+
+            <div class="swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <!-- First -->
+                        <section id="first-qna" class="swiper-slide">
+                            <div class="py-5 text-center p-12">
+                                <h1 class="fw-bold font-dark">우리 아이는?</h1>
+                            </div>
+
+                            <div class="row text-center">
+                                <div id="imgClick2" class="col-5">
+                                    <img src="../images/sign-up-dog.png" alt="signup-Dog" class="img-fluid scale-img"
+                                        onclick="change_img(event)">
+                                    <p class="fs-3 p-4 fw-bold">강아지</p>
+                                </div>
+                                <div class="col col-2 align-self-center pd-60">
+                                    <p class="dark-gray">OR</p>
+                                </div>
+                                <div id="imgClick" class="col-5">
+                                    <img src="../images/sign-up-cat.png" alt="signup-Cat" class="img-fluid scale-img"
+                                        onclick="change_img(event)">
+                                    <p class="fs-3 p-4 fw-bold">고양이</p>
+                                </div>
+
+                                <div class="Q1-btn changeBtn">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-toggle="button">NEXT</button>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                        <!-- Second -->
+                        <section id="second-qna" class="swiper-slide">
+                            <div>
+                                <h1 class="fw-bold font-dark text-center py-5 text-nowrap">우리 아이의 프로필을 만들어 볼까요?
+                                </h1>
+                            </div>
+
+                            <!-- info -->
+                            <form class="int-info">
+                                <div class="row text-center mb-4">
+                                    <div class="col-6">
+                                        <img src="../images/Dog-image-signUp.png" alt="signup-Dog" class="img-fluid"
+                                            style="margin-top: 44px;">
+                                    </div>
+                                    <div class="col-6 ec-base-table sectable">
+                                        <table border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">이름 *</th>
+                                                    <td><input type="text" class="inputTypeText" id="petName"
+                                                            placeholder="" value="" autocomplete="off">
+                                                        <input type="text" style="display:none;">
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">성별 *</th>
+                                                    <td><input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label mx-2" for="gridRadios1">여</label>
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios2" value="option2" style="cursor: pointer;">
+                                                        <label class="form-check-label mx-2" for="gridRadios2">남</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>생일 *</th>
+                                                    <td>
+                                                        <input id="partner_year" name="partner_year" fw-filter=""
+                                                            fw-label="" fw-msg="" class="inputTypeText1" placeholder=""
+                                                            maxlength="4" value="" type="text" autocomplete="off"> 년
+                                                        <input id="partner_month" name="partner_month" fw-filter=""
+                                                            fw-label="" fw-msg="" class="inputTypeText2" placeholder=""
+                                                            maxlength="2" value="" type="text" autocomplete="off"> 월
+                                                        <input id="partner_day" name="partner_day" fw-filter=""
+                                                            fw-label="" fw-msg="" class="inputTypeText3" placeholder=""
+                                                            maxlength="2" value="" type="text" autocomplete="off"> 일
+                                                    </td>
+                                                </tr>
+                                                <input type="text" style="display:none;">
+
+                                                <tr>
+                                                    <th class="va-t">견종 *</th>
+                                                    <td>
+                                                        <div class="select_mate" data-mate-select="active">
+                                                            <select class="my-pet-contents-input" name="" onchange="">
+                                                                <option value="0" style="font-size: 10px;">우리 아이는?
+                                                                </option>
+                                                                <option value="1">하이브리드견</option>
+                                                                <option value="2">말티즈</option>
+                                                                <option value="3">요크셔테리어</option>
+                                                                <option value="3">푸들</option>
+                                                                <option value="3">비숑</option>
+                                                                <option value="3">꼬똥드툴레아</option>
+                                                                <option value="3">웰시코기</option>
+                                                                <option value="3">불독</option>
+                                                                <option value="3">포메라니안</option>
+                                                                <option value="3">테리어</option>
+                                                                <option value="3">치와와</option>
+                                                                <option value="3">그 외</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>몸무게 *</th>
+                                                    <td>
+                                                        <div class="select_mate" data-mate-select="active">
+                                                            <select class="my-pet-contents-input" name="" onchange="">
+                                                                <option value="0" selected="selected" value="-1">- 모름 -
+                                                                </option>
+                                                                <option value="0"> 0kg 이상 ~ 1kg 미만</option>
+                                                                <option value="1"> 1kg 이상 ~ 2kg 미만</option>
+                                                                <option value="2"> 2kg 이상 ~ 3kg 미만</option>
+                                                                <option value="3"> 3kg 이상 ~ 4kg 미만</option>
+                                                                <option value="4"> 4kg 이상 ~ 5kg 미만</option>
+                                                                <option value="5"> 5kg 이상 ~ 7kg 미만</option>
+                                                                <option value="7"> 7kg 이상 ~ 9kg 미만</option>
+                                                                <option value="9"> 9kg 이상 ~ 11kg 미만</option>
+                                                                <option value="11"> 11kg 이상 ~ 14kg 미만</option>
+                                                                <option value="14"> 14kg 이상 ~ 17kg 미만</option>
+                                                                <option value="17"> 17kg 이상 ~ 20kg 미만</option>
+                                                                <option value="20"> 20kg 이상 ~ 24kg 미만</option>
+                                                                <option value="24"> 24kg 이상 ~ 28kg 미만</option>
+                                                                <option value="28"> 28kg 이상 ~ 32kg 미만</option>
+                                                                <option value="32"> 32kg 이상 ~ 37kg 미만</option>
+                                                                <option value="37"> 37kg 이상 ~ 42kg 미만</option>
+                                                                <option value="42"> 42kg 이상 ~ 47kg 미만</option>
+                                                                <option value="47"> 47kg 이상 ~ 52kg 미만</option>
+                                                                <option value="52">52kg 이상</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>사진 *</th>
+                                                    <td><label for="formFile" class="form-label initFileUpload">Choose
+                                                            File</label>
+                                                        <input class="form-control hideFile" type="file"
+                                                            id="formFile">No file
+                                                        chosen
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>정보 *</th>
+                                                    <td>
+                                                        <div class="content">
+                                                            <button type="button" id="modalBtn"
+                                                                class="modalButton">Click
+                                                                Here!</ㅠbutton>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                            <!-- button -->
+                            <div class="Q1-btn secondBtn">
+                                <button type="submit" class="btn btn-secondary" data-bs-toggle="button">NEXT</button>
+                            </div>
+                        </section>
+
+
+
+
+
+
+
+
+                        <!-- third -->
+                        <section id="third-qna" class="swiper-slide">
+                            <div class="py-5 text-center">
+                                <h1 class="fw-bold font-dark ">우리 주인님의 프로필을 만들어 볼까요?</h1>
+                            </div>
+
+
+                            <!-- info -->
+                            <form class="int-info">
+                                <div class="row text-center mb-4">
+                                    <div class="col-6">
+                                        <img src="../images/singup3-dog.png" alt="signup-Dog" class="img-fluid"
+                                            style="padding-top: 30px;">
+                                    </div>
+                                    <div class="col-6 ec-base-table sectable">
+                                        <table border="0">
+                                            <tbody>
+                                                <tr class="">
+                                                    <th scope="row">아이디 *</th>
+                                                    <td><input type="text" class="inputTypeText" id="id"
+                                                            placeholder="" value="" autocomplete="off" required>
+                                                    </td>
+                                                </tr>
+                                                <tr class="main">
+                                                    <th scope="row" style="vertical-align: top;">비밀번호 *</th>
+                                                    <td style="position:relative; left: -7px">
+                                                        <input id="password" name="passwd" class="inputTypeText"
+                                                            fw-filter="" fw-label="비밀번호" fw-msg="" autocomplete="off"
+                                                            maxlength="16" 0="disabled" value="" type="password"
+                                                            placeholder="최소 8자 ~ 최대 16자" >
+                                                            <i class="fa fa-eye fa-lg"></i>
+                                                            <p class="help mt05">* 영문대소문자/숫자/특수문자 중 2가지 이상 조합</p>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <th scope="row">비밀번호 확인 *</th>
+                                                    <td><input id="password2" name="passwd2" class="inputTypeText"
+                                                        fw-filter="" fw-label="비밀번호" fw-msg="" autocomplete="off"
+                                                        maxlength="16" 0="disabled" value="" type="password" required>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr class="">
+                                                    <th scope="row">이름 *</th>
+                                                    <td><input type="text" class="inputTypeText-box" id="userName"
+                                                            placeholder="" value="" autocomplete="off" required>
+                                                    </td>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                <tr class="">
+                                                    <th scope="row">휴대전화 *</th>
+                                                    <td class="partner_birth">
+                                                        <input id="phoneNumber" name="" fw-filter="" fw-label=""
+                                                            fw-msg="" class="phoneTextBox" placeholder="" maxlength="3"
+                                                            value="" type="text" autocomplete="off">
+                                                        <input id="" name="" fw-filter="" fw-label="" fw-msg=""
+                                                            class="phoneTextBox" placeholder="" maxlength="4" value=""
+                                                            type="text" autocomplete="off">
+                                                        <input id="p" name="" fw-filter="" fw-label="" fw-msg=""
+                                                            class="phoneTextBox" placeholder="" maxlength="4" value=""
+                                                            type="text" autocomplete="off">
+                                                    </td>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                <tr class="">
+                                                    <th scope="row" id="">이메일 *</th>
+                                                    <td><input type="text" class="inputTypeText" id="email"
+                                                            placeholder="" value="" autocomplete="off" required>
+                                                    </td>
+                                                </tr>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                            <!-- button -->
+                            <div class="Q1-btn secondBtn">
+                                <button type="submit" class="btn btn-secondary" data-bs-toggle="button"
+                                    onclick="chkPW()">NEXT</button>
+                            </div>
+                        </section>
+
+                        <!-- swiper -->
+                    </div>
+                </div>
+            </div>
+            <!-- swiper -->
+
+
+
+
+
+
+            <!-- modal (1) -->
+            <div id="simpleModal" class="modal">
+                <div class="modal-background">
+
+                    <div class="swiper">
+                        <div class="modal-content" style="overflow: hidden;">
+                            <span class="closeBtn">×</span>
+                            <div class="modal-container">
+                                <div class="swiper-wrapper" style="height: 693px;">
+                                    <!-- 모달창 1 -->
+                                    <section class="swiper-slide">
+                                        <div class="modal-header row" style="margin-top: -21px;">
+                                            <h1 class="fw-bold" style="font-size: 30px;">잠깐!<br>우리아이에 대해<br> 알려주세요!</h1>
+                                            <p style="color: #222;">아이에게 맞는 상품을 추천드릴게요.</p>
+                                        </div>
+
+                                        <div class="modal-body" style="margin-top: 15px;">
+                                            <div style="font-size: 18px; margin-bottom: 19px; color:#222;">우리 아이의 어떤 건강에
+                                                관심이 있으신가요?</div>
+
+                                            <!-- 버튼 호버 -->
+                                            <div id="modal-select">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">관절</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">모질</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">소화기</button>
+                                            </div>
+                                            <div id="modal-select">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">눈</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">눈물</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">체중</button>
+                                            </div>
+                                            <div id="modal-select">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">치아</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">피부</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">신장</button>
+                                            </div>
+                                            <div id="modal-select">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">귀</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">심장</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">호흡기</button>
+                                            </div>
+                                            <div style="margin-top: 50px; font-size: 18px; color:#222;">아이에게 혹시 알러지가
+                                                있나요?
+                                            </div>
+
+                                            <div id="modal-select">
+                                                <button type="button" class="btn btn-primary selectBtnWidth2 openBtn"
+                                                    data-bs-toggle="button">네, 있어요</button>
+                                                <!-- 알러지 없음 버튼 누르면 done버튼 나타나기 -->
+                                                <button type="button"
+                                                    class="btn btn-primary selectBtnWidth2 openCloseBtn"
+                                                    data-bs-toggle="button">아니요, 없어요</button>
+                                            </div>
+                                        </div>
+                                        <div id="tada-none" style="margin-top: 60px;">
+                                            <button type="submit" class="modalNextBtn"
+                                                data-bs-toggle="button">Continue</button>
+                                        </div>
+                                        <div id="tada" class="display-none" style="margin-top: 60px;">
+                                            <button type="submit" class="doneBtn2 modalNextBtn"
+                                                data-bs-toggle="button">Done</button>
+                                        </div>
+
+                                    </section>
+
+                                    <!-- modal (2) -->
+                                    <section class="swiper-slide">
+                                        <div class="modal_body" style="margin-top: -30px;">
+                                            <div style="font-size: 20px; margin: 10px; color:#222;">어떤 알러지가 있나요?</div>
+
+                                            <!-- 버튼 호버 -->
+                                            <div class="fc" style="margin: 5px;">주단백질원</div>
+                                            <!-- 버튼 호버 -->
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">소</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">돼지</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">양</button>
+                                            </div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">오리</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">닭</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">칠면조</button>
+                                            </div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">연어</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">참치</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">삼치</button>
+                                            </div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">캥거루</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">흑염소</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">사슴</button>
+                                            </div>
+
+                                            <!-- 버튼 호버 -->
+                                            <div class="fc" style="margin: 10px 0 5px 0;">보조 단백질원</div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">계란</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">뼈간식</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">멸치</button>
+                                            </div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">우유</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">펫밀크</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">치즈</button>
+                                            </div>
+                                            <!-- 버튼 호버 -->
+                                            <div class="fc" style="margin: 10px 0 5px 0;">기타</div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">콩</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">옥수수</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">귀리</button>
+                                            </div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">밀가루</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">고구마</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">감자</button>
+                                            </div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">단호박</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">양배추</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button" style="font-size: 15px;">브로콜리</button>
+                                            </div>
+                                            <div id="modal-select2">
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">사과</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button">바나나</button>
+                                                <button type="button" class="btn btn-primary selectBtnWidth"
+                                                    data-bs-toggle="button" style="font-size: 15px;">크랜베리</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <button type="submit" class="doneBtn modalNextBtn"
+                                                data-bs-toggle="button">Done</button>
+                                        </div>
+                                    </section>
+
+                                </div>
+
+                                <!-- <div>
+                                    <button type="submit" class="doneBtn modalNextBtn" data-bs-toggle="button">Done</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer id="footer"></footer> -->
+
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper(modal).js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- common js -->
+    <script src="../header/header.js"></script>
+    <script src="../footer/footer.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/sign-up.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>
