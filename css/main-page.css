@@ -1,0 +1,811 @@
+/* 공통 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+a {
+    text-decoration: none;
+    color: #636363;
+}
+
+li {
+    list-style: none;
+}
+
+/* li:not(:first-child) {
+    margin-left: 20px;
+} */
+
+#full-page {
+    width: 100%;
+}
+
+.fp-is-overflow>.fp-overflow {
+    display: flex;
+    height: 100%;
+}
+
+.size-cover {
+    background-size: cover;
+}
+
+:hover {
+    transition: .3s;
+}
+
+div a:hover {
+    color: #8085af;
+    font-weight: 500;
+}
+
+.pre {
+    white-space: pre-line;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #636363;
+}
+
+
+/* 페이지네비 */
+#fp-nav ul li a span {
+    background-color: #80AFE5;
+}
+
+#fp-nav ul li .fp-tooltip.fp-right {
+    color: #80AFE5;
+}
+
+
+/* 메인타이틀 */
+.main-title {
+    background: url('../img/main-title/background.png') center bottom no-repeat;
+    background-size: 100% 51%;
+}
+
+.main-title>.fp-overflow {
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.left-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 -75px;
+}
+
+.top-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #8085af;
+    flex-grow: 1;
+}
+
+.title-logo {
+    display: inline-block;
+    background: url('../img/main-title/logo.png') no-repeat;
+    background-size: cover;
+    width: 224px;
+    height: 50px;
+}
+
+.color-80AFE5 {
+    color: #80AFE5;
+}
+
+.line-margin {
+    margin: 40px 0;
+}
+
+.bottom-title {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-between;
+    color: #636363;
+}
+
+.rigth-title {
+    margin-bottom: -86px;
+}
+
+.my-dog-img {
+    background: url('../img/main-title/dog-img-col.png') no-repeat;
+    background-size: cover;
+    width: 384px;
+    height: 504px;
+    margin: 0 0 40px;
+}
+
+.my-cat-img {
+    background: url('../img/main-title/cat-img-col.png') no-repeat;
+    background-size: cover;
+    width: 384px;
+    height: 504px;
+    margin: 0 0 40px;
+}
+
+.often-product {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px
+}
+
+.often-product>.pre-normal {
+    white-space: normal;
+}
+
+.arrow-icon {
+    background: url('../img/main-title/arrow-icon.png') no-repeat;
+    width: 50px;
+    height: 18px;
+    margin: 1px 10px;
+}
+
+.line-height-30 {
+    line-height: 30px;
+}
+
+.title-product {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.title-product-dogimg1 {
+    background: url('../img/main-title/now사료.png') no-repeat;
+}
+
+.title-product-dogimg1:hover {
+    background: url('../img/main-title/now사료h.png') no-repeat;
+}
+
+.title-product-dogimg2 {
+    background: url('../img/main-title/호랑이패드.png') no-repeat;
+}
+
+.title-product-dogimg2:hover {
+    background: url('../img/main-title/호랑이패드h.png') no-repeat;
+}
+
+.title-product-dogimg3 {
+    background: url('../img/main-title/진짜육포2.png') no-repeat;
+}
+
+.title-product-dogimg3:hover {
+    background: url('../img/main-title/진짜육포2h.png') no-repeat;
+}
+.title-product-catimg1 {
+    background: url('../img/main-title/고양이츄르.png') no-repeat;
+}
+
+.title-product-catimg1:hover {
+    background: url('../img/main-title/고양이츄르h.png') no-repeat;
+}
+
+.title-product-catimg2 {
+    background: url('../img/main-title/고양이사료.png') no-repeat;
+}
+
+.title-product-catimg2:hover {
+    background: url('../img/main-title/고양이사료h.png') no-repeat;
+}
+
+.title-product-catimg3 {
+    background: url('../img/main-title/고양이모래.png') no-repeat;
+}
+
+.title-product-catimg3:hover {
+    background: url('../img/main-title/고양이모래h.png') no-repeat;
+}
+
+.title-product-brand {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.title-product-name {
+    font-size: 16px;
+}
+
+.title-img-size {
+    width: 170px;
+    height: 170px;
+}
+
+
+/* 고민별추천 */
+.trouble-recommend {
+    color: #636363;
+    align-items: center;
+}
+
+.health-background {
+    background: url('../img/product-img/review/health-background1.png') center bottom no-repeat;
+    background-size: 100% 80%;
+}
+
+.trouble-recommend-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.trouble-title {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-top: 47px;
+}
+
+.trouble-title>ul {
+    margin: 15px 0;
+    padding: 0;
+}
+
+.trouble-title>ul>li {
+    float: left;
+    font-size: 14px;
+    background-color: #bfbfbf;
+    border-radius: 30px;
+    padding: 7px 15px;
+    color: #FFFFFF;
+}
+.trouble-title>ul>li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.trouble-text {
+    font-size: 33px;
+    font-weight: 700;
+}
+.trouble-product-name {
+    font-size: 20px;
+}
+
+.fw300 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.trouble-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -20px 0 85px;
+}
+
+.trouble-product-img1 {
+    background: url('../img/product-img/review/review-product1.png') no-repeat;
+    width: 416px;
+    height: 416px;
+}
+
+.trouble-product-img2 {
+    background: url('../img/product-img/review/review-product2.png') no-repeat;
+    width: 416px;
+    height: 416px;
+}
+
+.product-review>p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.review-slide {
+    display: flex;
+    width: 610px;
+    justify-content: space-between;
+}
+
+.review-info {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.review-info>div:not(:first-child) {
+    margin-left: 20px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.review-text {
+    width: 450px;
+}
+
+.reviwe-date {
+    font-size: 12px;
+    text-align: end;
+    color: #AAAAAA;
+}
+
+.review-img-size {
+    width: 150px;
+    height: 150px;
+}
+
+.breath-img1 {
+    background-image: url('../img/product-img/review/브레스리뷰img1.png');
+}
+
+.breath-img2 {
+    background-image: url('../img/product-img/review/브레스리뷰img2.png');
+}
+
+.breath-img3 {
+    background-image: url('../img/product-img/review/브레스리뷰img3.png');
+}
+
+.joint-img1 {
+    background-image: url('../img/product-img/review/조인트리뷰img1.png');
+}
+
+.joint-img2 {
+    background-image: url('../img/product-img/review/조인트리뷰img2.png');
+}
+
+.joint-img3 {
+    background-image: url('../img/product-img/review/조인트리뷰img3.png');
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev {
+    display: none;
+}
+
+
+
+/* 맞춤상품 */
+.custom-product>.fp-overflow {
+    justify-content: center;
+    height: 100vh;
+}
+
+.custom-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.custom-left>.color-8D95D6 {
+    font-weight: 700;
+    color: #8D95D6;
+    font-size: 45px;
+    margin: 0 0 0 150px;
+}
+
+.custom-right {
+    background-color: #FFF7F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.product-title {
+    margin: 0 0 0 -375px
+}
+
+.product-title li {
+    float: left;
+    padding: 8px 25px;
+    font-size: 20px;
+    background-color: #8D95D6;
+    border: solid 1.5px #8D95D6;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.product-title li:not(:first-child) {
+    margin-left: 30px;
+}
+
+.product-title li:hover {
+    background-color: #FFFFFF;
+    border: solid 1.5px #8D95D6;
+    border-radius: 30px;
+    color: #8D95D6;
+}
+
+.title-click-o {
+    background-color: #FFFFFF !important;
+    border: solid 1.5px #8D95D6 !important;
+    border-radius: 30px !important;
+    color: #8D95D6 !important;
+}
+
+.product-item {
+    font-size: 18px;
+}
+
+.product-item h3 {
+    color: #636363;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 24px 30px 15px;
+}
+
+.product-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width: 900px;
+    height: 766px;
+}
+
+.product-content>a {
+    width: 300px;
+    height: 348px;
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.display-none {
+    display: none;
+}
+
+.color-EE6363 {
+    color: #EE6363;
+}
+
+.line-through {
+    text-decoration: line-through;
+    font-size: 18px;
+    color: #AAAAAA;
+}
+
+.product-img-size {
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+}
+
+.product-img-feed1 {
+    background: url('../img/product-img/best-product/그레인프리.png') no-repeat;
+}
+
+.product-img-feed1:hover {
+    background: url('../img/product-img/best-product/그레인프리h.png') no-repeat;
+}
+
+.product-img-feed2 {
+    background: url('../img/product-img/best-product/ANF.png') no-repeat;
+}
+
+.product-img-feed2:hover {
+    background: url('../img/product-img/best-product/ANFh.png') no-repeat;
+}
+
+.product-img-feed3 {
+    background: url('../img/product-img/best-product/로얄캐닌.png') no-repeat;
+}
+
+.product-img-feed3:hover {
+    background: url('../img/product-img/best-product/로얄캐닌h.png') no-repeat;
+}
+
+.product-img-feed4 {
+    background: url('../img/product-img/best-product/내츄럴코어.png') no-repeat;
+}
+
+.product-img-feed4:hover {
+    background: url('../img/product-img/best-product/내츄럴코어h.png') no-repeat;
+}
+
+.product-img-feed5 {
+    background: url('../img/product-img/best-product/닥터도비.png') no-repeat;
+}
+
+.product-img-feed5:hover {
+    background: url('../img/product-img/best-product/닥터도비h.png') no-repeat;
+}
+
+.product-img-feed6 {
+    background: url('../img/product-img/best-product/탐사.png') no-repeat;
+}
+
+.product-img-feed6:hover {
+    background: url('../img/product-img/best-product/탐사h.png') no-repeat;
+}
+
+.product-img-snack1 {
+    background: url('../img/product-img/best-product/진짜육포.png') no-repeat;
+}
+
+.product-img-snack1:hover {
+    background: url('../img/product-img/best-product/진짜육포h.png') no-repeat;
+}
+
+.product-img-snack2 {
+    background: url('../img/product-img/best-product/오메가소고기.png') no-repeat;
+}
+
+.product-img-snack2:hover {
+    background: url('../img/product-img/best-product/오메가소고기h.png') no-repeat;
+}
+
+.product-img-snack3 {
+    background: url('../img/product-img/best-product/유기농고구마.png') no-repeat;
+}
+
+.product-img-snack3:hover {
+    background: url('../img/product-img/best-product/유기농고구마h.png') no-repeat;
+}
+
+.product-img-snack4 {
+    background: url('../img/product-img/best-product/천연오리가슴살.png') no-repeat;
+}
+
+.product-img-snack4:hover {
+    background: url('../img/product-img/best-product/천연오리가슴살h.png') no-repeat;
+}
+
+.product-img-snack5 {
+    background: url('../img/product-img/best-product/건강한형제.png') no-repeat;
+}
+
+.product-img-snack5:hover {
+    background: url('../img/product-img/best-product/건강한형제h.png') no-repeat;
+}
+
+.product-img-snack6 {
+    background: url('../img/product-img/best-product/불리스틱.png') no-repeat;
+}
+
+.product-img-snack6:hover {
+    background: url('../img/product-img/best-product/불리스틱h.png') no-repeat;
+}
+
+.product-img-health1 {
+    background: url('../img/product-img/best-product/닥터바이브레스.png') no-repeat;
+}
+
+.product-img-health1:hover {
+    background: url('../img/product-img/best-product/닥터바이브레스h.png') no-repeat;
+}
+
+.product-img-health2 {
+    background: url('../img/product-img/best-product/다시초롱.png') no-repeat;
+}
+
+.product-img-health2:hover {
+    background: url('../img/product-img/best-product/다시초롱h.png') no-repeat;
+}
+
+.product-img-health3 {
+    background: url('../img/product-img/best-product/닥터바이아이즈.png') no-repeat;
+}
+
+.product-img-health3:hover {
+    background: url('../img/product-img/best-product/닥터바이아이즈h.png') no-repeat;
+}
+
+.product-img-health4 {
+    background: url('../img/product-img/best-product/닥터바이조인트.png') no-repeat;
+}
+
+.product-img-health4:hover {
+    background: url('../img/product-img/best-product/닥터바이조인트h.png') no-repeat;
+}
+
+.product-img-health5 {
+    background: url('../img/product-img/best-product/다시편안.png') no-repeat;
+}
+
+.product-img-health5:hover {
+    background: url('../img/product-img/best-product/다시편안h.png') no-repeat;
+}
+
+.product-img-health6 {
+    background: url('../img/product-img/best-product/퓨어마그프로.png') no-repeat;
+}
+
+.product-img-health6:hover {
+    background: url('../img/product-img/best-product/퓨어마그프로h.png') no-repeat;
+}
+
+.product-img-living1 {
+    background: url('../img/product-img/best-product/노즈워크1.png') no-repeat;
+}
+
+.product-img-living1:hover {
+    background: url('../img/product-img/best-product/노즈워크1h.png') no-repeat;
+}
+
+.product-img-living2 {
+    background: url('../img/product-img/best-product/노즈워크2.png') no-repeat;
+}
+
+.product-img-living2:hover {
+    background: url('../img/product-img/best-product/노즈워크2h.png') no-repeat;
+}
+
+.product-img-living3 {
+    background: url('../img/product-img/best-product/리드줄.png') no-repeat;
+}
+
+.product-img-living3:hover {
+    background: url('../img/product-img/best-product/리드줄h.png') no-repeat;
+}
+
+.product-img-living4 {
+    background: url('../img/product-img/best-product/노즈워크3.png') no-repeat;
+}
+
+.product-img-living4:hover {
+    background: url('../img/product-img/best-product/노즈워크3h.png') no-repeat;
+}
+
+.product-img-living5 {
+    background: url('../img/product-img/best-product/하네스.png') no-repeat;
+}
+
+.product-img-living5:hover {
+    background: url('../img/product-img/best-product/하네스h.png') no-repeat;
+}
+
+.product-img-living6 {
+    background: url('../img/product-img/best-product/노즈워크4.png') no-repeat;
+}
+
+.product-img-living6:hover {
+    background: url('../img/product-img/best-product/노즈워크4h.png') no-repeat;
+}
+
+
+/* 핫플레이스 */
+.hotplace {
+    background: url('../img/pet-on/hot-place-background.png') center bottom no-repeat;
+    background-size: 100% 66%;
+}
+
+.hotplace>.fp-overflow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.hot-title {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17%;
+}
+
+.hot-bigtext {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #636363;
+    margin-top: 15px;
+}
+
+.hot-smalltext {
+    text-align: center;
+    font-size: 20px;
+    color: #636363;
+}
+
+.color-FAA8C3 {
+    color: #FAA8C3;
+}
+
+.swiper-hot {
+    width: 100%;
+    height: 272px;
+    margin-top: 205px;
+}
+.swiper-wrapper-hot {
+    display: flex;
+}
+.swiper-slide-hot {
+    text-align: center;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide-hot img {
+    display: block;
+    margin: 0 14px;
+}
+
+.swiper-slide-hot img:hover {
+    cursor: pointer;
+    scale: 1.08;
+    transition: .4s;
+}
+
+
+/* 검색 & 이벤트 */
+.search-eventbanner>.fp-overflow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.search-container {
+    width: 70%;
+    border-bottom: 1px solid #8D95D6;
+}
+
+.search-container>form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #636363;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color: #ccc;
+}
+
+.search-button {
+    display: inline-block;
+    background: url('../img/event-banner&search/search.png') no-repeat;
+    filter: invert(70%) sepia(3%) saturate(6856%) hue-rotate(198deg) brightness(87%) contrast(91%);
+    width: 35px;
+    height: 35px;
+    margin: 10px 20px;
+}
+
+.event-banner {
+    width: 100%;
+    height: 350px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+

@@ -1,0 +1,402 @@
+/* 메인타이틀 */
+@media screen and (min-width:1421px) {
+    .main-title {
+        background-size: 100% 48%;
+    }
+
+    .top-title {
+        font-size: 48px;
+    }
+
+    .title-logo {
+        width: 250px;
+        height: 55px;
+    }
+
+    .bottom-title {
+        flex-direction: row;
+    }
+
+    .often-product {
+        width: 35%;
+        flex-direction: column;
+    }
+
+    .often-product>.pre {
+        width: 250px;
+        white-space: pre-line;
+    }
+
+    .arrow-icon {
+        margin: 20px 10px;
+    }
+
+    .title-product {
+        width: 100%;
+    }
+
+    .my-dog-img {
+        width: 480px;
+        height: 630px;
+    }
+
+    .my-cat-img {
+        width: 480px;
+        height: 630px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+    .main-title {
+        background-size: 100% 39%;
+    }
+
+    .main-title>.fp-overflow {
+        flex-flow: column-reverse;
+        margin: 20px 20px 60px;
+    }
+
+    .left-title {
+        flex-direction: column;
+        margin: 0 0 -70px;
+    }
+
+    .top-title {
+        font-size: 38px;
+        font-weight: 800;
+        color: #8085af;
+        flex-grow: 1;
+        margin-bottom: 30px;
+    }
+
+    .title-logo {
+        width: 170px;
+        height: 38px;
+    }
+
+    .pre-normal {
+        white-space: normal;
+    }
+
+    .line-margin {
+        margin: 10px 0;
+    }
+
+    .bottom-title {
+        height: 100%;
+        flex-grow: 2;
+        flex-direction: column;
+        align-items: start;
+        font-size: 20px;
+        justify-content: space-between;
+        color: #636363;
+        margin-bottom: 27px;
+    }
+
+    .often-product {
+        width: 100%;
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    .arrow-icon {
+        margin: 0 10px;
+    }
+
+    .title-product {
+        width: 100%;
+    }
+
+    .rigth-title {
+        margin-bottom: -29px;
+    }
+    .my-dog-img {
+        background: url('../img/main-title/dog-img-row.png') no-repeat;
+        background-size: cover;
+        width: 457px;
+        height: 348px;
+        margin: 0;
+    }
+
+    .my-cat-img {
+        background: url('../img/main-title/cat-img-row.png') no-repeat;
+        background-size: cover;
+        width: 457px;
+        height: 348px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        background-size: 100% 41%;
+    }
+
+    .main-title>.fp-overflow {
+        flex-flow: column-reverse;
+        margin: 20px 20px 60px;
+    }
+
+    .left-title {
+        flex-direction: column;
+        margin: 0 0 -111px;
+    }
+
+    .top-title {
+        font-size: 30px;
+        font-weight: 800;
+        color: #8085af;
+        flex-grow: 1;
+        margin-bottom: 30px;
+    }
+
+    .title-logo {
+        width: 171px;
+        height: 38px;
+    }
+
+    .pre-normal {
+        white-space: normal;
+    }
+
+    .line-margin {
+        margin: 10px 0;
+    }
+
+    .bottom-title {
+        height: 100%;
+        flex-grow: 2;
+        flex-direction: column;
+        align-items: start;
+        font-size: 20px;
+        justify-content: space-between;
+        color: #636363;
+        margin-bottom: 27px;
+    }
+
+    .often-product {
+        width: 100%;
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    .arrow-icon {
+        margin: 0 10px;
+    }
+
+    .title-product {
+        width: 100%;
+    }
+
+    .my-dog-img {
+        background: url('../img/main-title/dog-img-row.png') no-repeat;
+        background-size: cover;
+        width: 410px;
+        height: 312px;
+        margin: 0;
+    }
+    .my-cat-img {
+        background: url('../img/main-title/cat-img-row.png') no-repeat;
+        background-size: cover;
+        width: 410px;
+        height: 312px;
+        margin: 0;
+    }
+}
+
+
+/* 고민추천 */
+@media screen and (min-width:1201px) {
+    .carousel-item {
+        height: 100%;
+    }
+
+    .health-background {
+        background: url('../img/product-img/review/health-background.png') right no-repeat;
+        background-size: 110% 100%;
+    }
+
+    .trouble-recommend-product {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+
+    .trouble-title {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        height: 350px;
+        margin-top: 0;
+    }
+
+    .trouble-title li {
+        font: 16px;
+    }
+
+    .trouble-text {
+        font-size: 40px;
+    }
+
+    .trouble-product-name {
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    .trouble-product {
+        margin: 0;
+    }
+
+    .product-review>p {
+        font-size: 20px;
+    }
+
+    .review-info:first-child b,
+    .fs14 {
+        font-size: 17px;
+    }
+
+    .review-text {
+        font-size: 18px;
+    }
+
+    .reviwe-date {
+        font-size: 14px;
+    }
+}
+
+
+/* 맞춤상품 */
+@media screen and (min-width:950px) and (max-width:1250px) {
+    .custom-left>.color-8D95D6 {
+        font-size: 40px;
+        margin: 0 0 0 25px;
+    }
+
+    .product-title {
+        margin: 0 0 0 -220px
+    }
+
+    .product-title li {
+        padding: 6px 23px;
+        font-size: 18px;
+    }
+
+    .product-item {
+        font-size: 16px;
+    }
+
+    .product-content {
+        width: 675px;
+        height: 643px;
+        align-content: space-around;
+    }
+
+    .product-content>a {
+        width: 225px;
+        height: 305px;
+    }
+
+    .product-content>a>.pre {
+        margin-bottom: 10px;
+    }
+
+    .line-through {
+        font-size: 15px;
+    }
+
+    .product-img-size {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .product-img-size:hover {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .custom-left>.color-8D95D6 {
+        color: #8D95D6;
+        font-size: 35px;
+        margin: 0 0 0 19px;
+    }
+
+    .product-title {
+        margin: 0 0 0 -25px
+    }
+
+    .product-title li {
+        padding: 6px 23px;
+        font-size: 18px;
+    }
+
+    .product-item {
+        font-size: 16px;
+    }
+
+    .product-item h3 {
+        margin: 15px 20px;
+    }
+
+    .product-content {
+        width: 460px;
+        height: 616px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-content>a {
+        width: 230px;
+        height: 270px;
+    }
+
+    .product-content .display-none {
+        display: none;
+    }
+
+    .line-through {
+        font-size: 15px;
+    }
+
+    .product-img-size {
+        width: 170px;
+        height: 170px;
+        background-size: cover;
+    }
+
+    .product-img-size:hover {
+        background-size: cover;
+    }
+}
+
+
+/* 핫플 */
+@media screen and (min-width:769px) and (max-width:1080px) {
+    .hot-bigtext {
+        font-size: 38px;
+        margin-top: 10px;
+    }
+
+    .hot-smalltext {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .hot-bigtext {
+        font-size: 42px;
+        margin-top: 0;
+    }
+
+    .hot-smalltext {
+        font-size: 25px;
+    }
+    .swiper-slide-hot img {
+        width: 240px;
+    }
+}
