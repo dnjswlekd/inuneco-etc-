@@ -3,4 +3,4 @@
 
 https://dnjswlekd.github.io/myPage/myPage.html
 
-https://inuneco/html/main-page-first.html
+https://dnjswlekd.github.io/inuneco/html/main-page-first.html
